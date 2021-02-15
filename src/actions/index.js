@@ -5,8 +5,8 @@ export const CHANGE_OPERATION = "CHANGE_OPERATION";
 
 export const addOne = () => {
     return({type:ADD_ONE});
-}
+};
 
 export const applyNumber = (number) => {
     return({type:APPLY_NUMBER, payload:number});
-}
+};  
