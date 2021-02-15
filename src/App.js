@@ -12,6 +12,11 @@ function App() {
 
   const [state, dispatch] = useReducer(reducer, initialState);
 
+  const handleAddClick = () =>{
+    dispatch(addOne(1));
+  };
+ 
+
   return (
     <div className="App">
       <nav className="navbar navbar-dark bg-dark">
@@ -35,7 +40,7 @@ function App() {
             </div>
 
             <div className="row">
-              <CalcButton value={1}/>
+              <CalcButton onClick={handleAddClick} value={1}/>
               <CalcButton value={2}/>
               <CalcButton value={3}/>
             </div>
